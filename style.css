@@ -1,0 +1,149 @@
+:root {
+  --button: #ff0000;
+  --main-background: #c4c4c4;
+  --background: #e5e5e5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9c9696;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  display: flex;
+  height: calc(100vh - 100px);
+  width: 100vw;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 37.5%;
+  background-color: var(--background);
+  border: 1px solid red;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 62.5%;
+  background-color: var(--main-background);
+  border: 1px solid blue;
+}
+
+.header-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85px;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid green;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 60%;
+  border: 1px solid yellow;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  border: none;
+  width: 100%;
+  height: 30px;
+  padding-left: 28px;
+  padding-right: 10px;
+  font-size: 13px;
+  border-radius: 4px;
+  background-image: url("assets/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 18px;
+}
+
+.footer-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background-color: var(--background);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 60%;
+}
+
+.social a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+  background-color: var(--footer);
+  border: 1px solid red;
+  gap: 5px;
+}
+
+.explore a {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.explore img {
+  height: 18px;
+  width: 18px;
+}
+
+.iframe {
+  display: flex;
+  height: 100%;
+  width: 15%;
+  border: 1px solid blue;
+}
+
+.iframe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
